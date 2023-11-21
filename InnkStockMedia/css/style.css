@@ -70,8 +70,74 @@
   --dark-inverse-primary: #006A67;
 
   /* Typography */
+
+  /* font family */
+  --ff-primary: 'Work Sans', sans-serif;
+
+  /*  font size */
+  --fs-base: 62.5%;
+  --fs-display-large: 5.7rem;
+  --fs-display-medium: 4.5rem;
+  --fs-display-small: 3.6rem;
+  --fs-headline-large: 3.2rem;
+  --fs-headline-medium: 2.8rem;
+  --fs-headline-small: 2.4rem;
+  --fs-title-large: 2.2rem;
+  --fs-title-medium: 1.6rem;
+  --fs-title-small: 1.4rem;
+  --fs-label-large: 1.4rem;
+  --fs-label-medium: 1.2rem;
+  --fs-label-small: 1.1rem;
+  --fs-body-large: 1.6rem;
+  --fs-body-medium: 1.4rem;
+  --fs-body-small: 1.2rem;
+
+  /* font weight */
+  --weight-regular: 400;
+  --weight-medium: 500;
+
+  /* Border Radius */
+  --radius-extra-small: 4px;
+  --radius-small: 8px;
+  --radius-medium: 12px;
+  --radius-large: 16px;
+  --radius-large-end: 0 16px 16px 0;
+  --radius-extra-large: 28px;
+  --radius-circle: 50%;
+  --radius-full: 500px;
+
+  /* Elevation */
+  --elevation-1: 0 1px 2px hsla(0, 0%, 0%, 0.3), 0 1px 3px 1px hsla(0, 0%, 0%, 0.15);
+  --elevation-2: 0 1px 2px hsla(0, 0%, 0%, 0.3), 0 2px 6px 2px hsla(0, 0%, 0%, 0.15);
+
+  /* Other */
+  --top-app-bar-height: 64px;
 }
 
+@media(prefers-reduced-motion: no-preference) {
+  :root {
+    /* Transition */
+
+    /* duration */
+    --motion-duration-short-1: 100ms;
+    --motion-duration-short-2: 200ms;
+    --motion-duration-medium-1: 250ms;
+    --motion-duration-medium-2: 400ms;
+    --motion-duration-long: 500ms;
+
+    /* easing */
+    --motion-easing-linear: cubic-bezier(0, 0, 1, 1);
+    --motion-easing-standard: cubic-bezier(0.2, 0, 0, 1);
+    --motion-easing-emphasized: cubic-bezier(0.2, 0, 0, 1);
+    --motion-easing-emphasized-decelerate: cubic-bezier(0.05, 0.7, 0.1, 1);
+    --motion-easing-emphasized-accelerate: cubic-bezier(0.3, 0, 0.8, 0.15);
+    --motion-easing-legacy: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+}
 
 /*-----------------------------------*\
   #RESET
