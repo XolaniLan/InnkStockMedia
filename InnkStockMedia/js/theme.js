@@ -1,7 +1,7 @@
 "use strict";
 
 const /** {NodeElement} */ $HTML = document.documentElement;
-let /** {Boolean} */ isDark = window.matchMedia("(prefers-color-scheme: dark)").addEventListener.matches;
+let /** {Boolean} */ isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
 if (sessionStorage.getItem("theme")) {
   $HTML.dataset.theme = sessionStorage.getItem("theme");
@@ -16,6 +16,6 @@ const changeTheme = function () {
 }
 
 window.addEventListener("load", () => {
-  const /** {NodeElement} */ $themeBtn = document.querySelector("[data-theme=toggler]")
+  const /** {NodeElement} */ $themeBtn = document.querySelector("[data-theme-toggler]")
   $themeBtn.addEventListener("click", changeTheme);
-})
+});
