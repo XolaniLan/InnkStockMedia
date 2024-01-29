@@ -16,6 +16,6 @@ const changeTheme = function () {
 }
 
 window.addEventListener("load", () => {
-  const /** {NodeElement} */ $themeBtn = document.querySelector("[data-theme-toggler]")
+  const /** {NodeElement} */ $themeBtn = document.querySelector("[data-theme-toggler]");
   $themeBtn.addEventListener("click", changeTheme);
 });

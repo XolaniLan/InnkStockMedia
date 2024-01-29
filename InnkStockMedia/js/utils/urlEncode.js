@@ -1,7 +1,14 @@
-"use strict";
 /**
+* @copyright codewithsadee 2023
+* @author sadee <codewithsadee@gmail.com>
+*/
+
+"use strict";
+
+/**
+ * Convert Object to Url
  * @param {Object} urlObj url object
- * @return url string
+ * @returns url string
  */
 
 export const urlEncode = urlObj => {

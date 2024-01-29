@@ -1,19 +1,28 @@
 "use strict";
 
-/**
- * Imports
+/** 
+ * Import
  */
-import { addEventListener } from "./utils/event.js";
 
+import { addEventOnElements } from "./utils/event.js";
+
+
+/**
+ * Add segment functionality
+ * @param {Node} $segment Segmented button container
+ * @param {Function} callback Callback function
+ */
 
 export const segment = function ($segment, callback) {
+
   const /** {NodeList} */ $segmentBtns = $segment.querySelectorAll("[data-segment-btn]");
   let /** {NodeElement} */ $lastSelectedSegmentBtn = $segment.querySelector("[data-segment-btn].selected");
 
-  addEventListener($segmentBtns, "click", function () {
+  addEventOnElements($segmentBtns, "click", function () {
     $lastSelectedSegmentBtn.classList.remove("selected");
     this.classList.add("selected");
     $lastSelectedSegmentBtn = this;
     callback(this.dataset.segmentValue);
   });
+
 }

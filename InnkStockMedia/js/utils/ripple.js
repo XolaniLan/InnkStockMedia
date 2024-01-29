@@ -1,12 +1,19 @@
+/**
+ * @copyright codewithsadee 2023
+ * @author sadee <codewithsadee@gmail.com>
+ */
+
 "use strict";
 
+
 /**
- * Adds ripple effect on an element
- * @param {Node} $rippleElem Element for the ripple effect
+ * Add ripple effect on an element
+ * @param {Node} $rippleElem Element for ripple effect
  */
 
 export const ripple = function ($rippleElem) {
   $rippleElem.addEventListener("pointerdown", function (e) {
+
     e.stopImmediatePropagation();
 
     const /** {NodeElement} */ $ripple = document.createElement("div");
@@ -14,7 +21,7 @@ export const ripple = function ($rippleElem) {
 
     this.appendChild($ripple);
 
-    const removeRipple = e => {
+    const removeRipple = () => {
       $ripple.animate({
         opacity: 0
       }, { fill: "forwards", duration: 200 });

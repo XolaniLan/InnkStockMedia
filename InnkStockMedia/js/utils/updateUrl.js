@@ -1,14 +1,21 @@
-"use strict";
 /**
- * Imports
+ * @copyright codewithsadee 2023
+ * @author sadee <codewithsadee@gmail.com>
+ */
+
+"use strict";
+
+/**
+ * Import
  */
 
 import { urlEncode } from "./urlEncode.js";
 
-/**  
- * Update URL
- * @param {Object} filterObj Filter Object
- * @param {String} searchType Search Type E.g 'Videos' or 'Photos'
+
+/**
+ * Update url
+ * @param {Object} filterObj Filter object
+ * @param {String} searchType Search type eg. 'videos' or 'photos'
  */
 
 export const updateUrl = (filterObj, searchType) => {
