@@ -25,7 +25,7 @@ Before you get started, make sure you have the following:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/xolanilan/InnkStockMedia.git
+   git clone https://github.com/XolaniLan/InnkStockMediaApplication.git
    ```
 
 2. Navigate to the project directory:
@@ -41,11 +41,9 @@ Before you get started, make sure you have the following:
 Replace `'YOUR_PEXELS_API_KEY'` in the `app.js` file with your actual Pexels API key.
 
 ```javascript
-// app.js
+// app_configure.js
 
-const apiKey = 'YOUR_PEXELS_API_KEY';
-const apiUrl = 'https://api.pexels.com/v1/';
-
+const API_KEY = 'YOUR_PEXELS_API_KEY';
 // ... rest of the code
 ```
 
@@ -57,15 +55,12 @@ const apiUrl = 'https://api.pexels.com/v1/';
 
 3. Toggle between light and dark modes for a personalized viewing experience.
 
-
 ## Contributing
 
 Contributions are welcome! If you have suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
-ect is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
 - Special thanks to [Pexels](https://www.pexels.com/) for providing an exceptional API for stock photos and videos.
-
 
 Embark on a journey of creativity with InnkStockMedia! 🌟📸🎥
