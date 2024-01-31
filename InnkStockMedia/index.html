@@ -8,9 +8,9 @@
   <!-- 
     - primary meta tags
   -->
-  <title>InnkStockMedia - A large stock library of videos and images</title>
-  <meta name="title" content="InnkStockMedia - A large stock library">
-  <meta name="description" content="This is a stock photos app made by Xolani Lan Shongwe">
+  <title>Pixstock - A large stock library</title>
+  <meta name="title" content="Pixstock - A large stock library">
+  <meta name="description" content="This is a stock photos app made by codewithsadee">
 
   <!-- 
     - favicon
@@ -63,7 +63,7 @@
       <div class="state-layer"></div>
     </button>
 
-    <a href="/" class="logo">InnkStockMedia</a>
+    <a href="/" class="logo">Pixstock</a>
 
     <div class="search-view" data-search-view>
 
@@ -161,7 +161,7 @@
         <div class="state-layer"></div>
       </button>
 
-      <a href="/" class="logo">InnkStockMedia</a>
+      <a href="/" class="logo">Pixstock</a>
 
     </div>
 
@@ -202,15 +202,48 @@
         </a>
 
       </li>
+
+      <li class="drawer-item">
+
+        <a href="./pages/collections/collection.html" class="drawer-link" data-drawer-link>
+          <span class="material-symbols-outlined leading-icon" aria-hidden="true">auto_awesome_mosaic</span>
+
+          <span class="label-large">Collections</span>
+
+          <div class="state-layer"></div>
+        </a>
+
+      </li>
+
+      <li class="drawer-item">
+
+        <a href="./pages/favorite/favorite.html" class="drawer-link" data-drawer-link>
+          <span class="material-symbols-outlined leading-icon" aria-hidden="true">favorite</span>
+
+          <span class="label-large">Favorite</span>
+
+          <div class="state-layer"></div>
+        </a>
+
+      </li>
+
     </ul>
 
   </nav>
+
+
+
+
 
   <!-- 
     - #SCRIM
   -->
 
   <div class="scrim" data-scrim data-nav-toggler></div>
+
+
+
+
 
   <main class="main">
     <article>
@@ -226,15 +259,15 @@
           <div class="card-content">
 
             <h3 class="headline-medium card-title">
-              High Quality Stock Media
+              High quality stock photos for free!
             </h3>
 
             <p class="body-large card-text">
-              Explore all our exceptional collection of high-quality stock photos.
+              Explore our exceptional collection of high-quality stock photos.
             </p>
 
             <a href="./pages/photos/photos.html" class="btn btn-primary" data-ripple>
-              <span class="label-large text">Explore Now😉</span>
+              <span class="label-large text">Explore Now</span>
 
               <div class="state-layer"></div>
             </a>
@@ -437,8 +470,36 @@
         </div>
       </section>
 
+
+
+
+
+      <!-- 
+        - #COLLECTION
+      -->
+
+      <section class="section collection" aria-labelledby="collection-label">
+        <div class="container">
+
+          <h2 class="title-large section-title" id="collection-label">Featured collections</h2>
+
+          <div class="collection-grid" data-collection-grid></div>
+
+          <a href="./pages/collections/collection.html" class="btn btn-primary" data-ripple>
+            <span class="label-large text">More collections</span>
+
+            <div class="state-layer"></div>
+          </a>
+
+        </div>
+      </section>
+
     </article>
   </main>
+
+
+
+
 
   <!-- 
     - #FOOTER
@@ -450,12 +511,28 @@
       <div class="footer-card">
 
         <div class="col">
-          <a href="/" class="logo">InnkStockMedia</a>
+          <a href="/" class="logo">Pixstock</a>
 
           <p class="text body-small">
-            InnkStockMedia is a stock photo app developed by <span class="color-primary">Xolani Lan Shongwe</span> and all Photos
+            Pixstock is a stock photo app developed by <span class="color-primary">codewithsadee</span> and all Photos
             and Videos provided by <a href="https://pexels.com" target="_blank" class="color-primary">Pexels</a>.
           </p>
+        </div>
+
+        <div class="col">
+
+          <p class="title label-medium">Follow us on</p>
+
+          <div class="social-list">
+
+            <a href="https://youtube.com/@codewithsadee" target="_blank" class="label-small color-primary">YouTube</a>
+
+            <a href="https://github.com/@codewithsadee" target="_blank" class="label-small color-primary">GitHub</a>
+
+            <a href="https://twitter.com/@codewithsadee" target="_blank" class="label-small color-primary">Twitter</a>
+
+          </div>
+
         </div>
 
       </div>
